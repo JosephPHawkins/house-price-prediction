@@ -78,6 +78,24 @@ model_pipeline = Pipeline([
 model_pipeline.fit(X_train, y_train)
 predictions = model_pipeline.predict(X_test)
 
+
+
+###  Final Test Set Evaluation
+- **Final RMSE:** `36,503.50`
+
+
+## Notes
+
+There are further opportunities for improvement:
+- Integrating unsupervised learning techniques like **clustering**
+- Dropping **uninformative or noisy features**
+- Utilizing **model stacking** or hyperparameter tuning
+
+For this phase, the main focus was on building a clean, modular, and extensible pipeline using custom feature engineering — and that objective was achieved.
+
+
+
+
 Why This Matters
 
 This project shows how I combine technical skills with real-world thinking to get better predictions:
@@ -90,7 +108,6 @@ Using smart feature engineering to boost performance
 
 Building end-to-end pipelines that are easy to maintain
 
-Let’s Connect
 
 I’m excited about new opportunities and collaborations. Reach out anytime!
 
