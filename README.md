@@ -1,40 +1,41 @@
-Housing Price Prediction — Feature Engineering & Modeling Pipeline
-Project Overview
+# **Housing Price Prediction — Feature Engineering & Modeling Pipeline**
 
-This project demonstrates advanced feature engineering techniques and machine learning modeling applied to housing price prediction.
-The goal is to improve predictive accuracy by transforming raw data into meaningful features through custom preprocessing pipelines, followed by robust model training.
+## **Project Overview**
 
+**This project demonstrates advanced feature engineering techniques and machine learning modeling applied to housing price prediction.  
+The goal is to improve predictive accuracy by transforming raw data into meaningful features through custom preprocessing pipelines, followed by robust model training.**
 
+---
 
-Key Features & Engineering Techniques
+## **Key Features & Engineering Techniques**
 
-Addition Pipeline: Adds up columns like total square footage to capture overall size.
+- **Addition Pipeline:** **Adds up columns like total square footage to capture overall size.**  
+- **Multiplication Pipeline:** **Multiplies features such as quality and condition to capture their combined effect.**  
+- **Subtraction Pipeline:** **Calculates differences, like how old a house is by subtracting the build year from the sale year.**  
+- **Weighted Bathrooms Pipeline:** **Combines full and half bathrooms with different weights to get a better bathroom count.**  
+- **RBF Kernel Similarity:** **Applies a radial basis function to the year built, helping the model capture non-linear trends related to the age of the house.**
 
-Multiplication Pipeline: Multiplies features such as quality and condition to capture their combined effect.
+**I wrapped each of these transformations into easy-to-use pipelines with scikit-learn, which keeps everything neat and reusable.**
 
-Subtraction Pipeline: Calculates differences, like how old a house is by subtracting the build year from the sale year.
+---
 
-Weighted Bathrooms Pipeline: Combines full and half bathrooms with different weights to get a better bathroom count.
+## **How it Works**
 
-RBF Kernel Similarity: Applies a radial basis function to the year built, helping the model capture non-linear trends related to the age of the house.
+- **Handles missing data with median imputation to keep the dataset clean.**  
+- **Custom transformers bake domain knowledge directly into the features.**  
+- **These steps plug into a bigger pipeline that cleans data and feeds it into a machine learning model.**  
+- **Uses a Random Forest regressor — reliable and effective for complex data.**  
+- **The whole setup is flexible and easy to expand or adjust.**
 
-I wrapped each of these transformations into easy-to-use pipelines with scikit-learn, which keeps everything neat and reusable.
+---
 
+## **Quick Start**
 
+**1. Clone this repo.**
 
-How it works 
-
-I handle missing data with median imputation to keep the dataset clean.
-
-Custom transformers let me bake domain knowledge directly into the features.
-
-All these steps plug into a bigger pipeline that cleans the data and feeds it into a machine learning model.
-
-For modeling, I use a Random Forest regressor — it’s reliable and handles complex data well.
-
-The whole setup is flexible and can easily be expanded or adjusted.
-
-
+**2. Install the dependencies:**  
+```bash
+pip install -r requirements.txt
 
 
 
