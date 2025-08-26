@@ -1,0 +1,22 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Mac OS junk
+.DS_Store
+
+# Model files (optional)
+*.pkl
+
+# Kaggle API key
+kaggle.json
+
+# Virtual environment folders
+env/
+venv/
+
+
