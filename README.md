@@ -79,9 +79,14 @@ model_pipeline.fit(X_train, y_train)
 predictions = model_pipeline.predict(X_test)
 
 
+```
+
+
+
 
 ###  Final Test Set Evaluation
 - **Final RMSE:** `36,503.50`
+
 
 
 ## Notes
@@ -96,7 +101,7 @@ For this phase, the main focus was on building a clean, modular, and extensible 
 
 
 
-Why This Matters
+## Why This Matters
 
 This project shows how I combine technical skills with real-world thinking to get better predictions:
 
@@ -109,6 +114,10 @@ Using smart feature engineering to boost performance
 Building end-to-end pipelines that are easy to maintain
 
 
+
+
+
+
 I’m excited about new opportunities and collaborations. Reach out anytime!
 
 LinkedIn: https://www.linkedin.com/in/joseph-hawkins-0aa960259/
@@ -118,4 +127,4 @@ Email: Hawkinsjoseph2003@gmail.com
 GitHub: https://github.com/JosephPHawkins
 
 
-Thanks for taking a look! I’d love to chat more about how I can help your team.
+Thanks for taking a look!
